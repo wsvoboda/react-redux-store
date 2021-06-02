@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import IndividualProduct from "./IndividualProduct";
+// import IndividualProduct from "./IndividualProduct";
 import { showProducts } from "../actions/products-actions";
 // import { fillCart } from "../actions/cart-actions";
 
@@ -21,7 +21,17 @@ export default function Products() {
     <div>
       <h1>Products</h1>
       {products.map((item) => {
-        return <IndividualProduct item={item} />;
+        return (
+          <div className="products">
+            <p>{item.title}</p>
+            <img src={item.image} alt="product" />
+            <p>{item.description}</p>
+            <p>${item.price}</p>
+            <label>Qty</label>
+            <input type="number"></input>
+            <button>Add to Cart</button>
+          </div>
+        );
       })}
     </div>
   );
