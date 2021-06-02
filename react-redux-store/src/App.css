@@ -36,14 +36,24 @@
 .cart {
   margin-top: 10px;
   margin-bottom: -3px;
-  height: 18px;
-  width: 20px;
+  height: 20px;
+  width: 22px;
 }
 
 .footer-links img {
-  height: 30px;
+  height: 25px;
+  width: 25px;
+  margin: 15px;
+}
+
+.products img {
+  height: 300px;
+  width: 300px;
+}
+
+.products input {
   width: 30px;
-  margin: 20px;
+  margin: 4px;
 }
 
 @keyframes App-logo-spin {

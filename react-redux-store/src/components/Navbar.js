@@ -5,7 +5,8 @@ import AboutUs from "./AboutUs";
 import Products from "./Products";
 import Cart from "./Cart";
 import Landing from "./Landing";
-import cart from "../assets/cart.png";
+import IndividualProduct from "./IndividualProduct";
+import cartpic from "../assets/cart.png";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -19,7 +20,7 @@ export default function Navbar() {
             <Link to="/aboutus">About Us</Link>
             <Link to="/products">Products</Link>
             <Link to="/cart">
-              <img className="cart" src={cart} alt="shopping-cart" />
+              <img className="cart" src={cartpic} alt="shopping-cart" />
             </Link>
           </nav>
         </div>
@@ -32,6 +33,9 @@ export default function Navbar() {
           </Route>
           <Route path="/products">
             <Products />
+          </Route>
+          <Route path="/products/:id">
+            <IndividualProduct />
           </Route>
           <Route exact path="/">
             <Landing />
