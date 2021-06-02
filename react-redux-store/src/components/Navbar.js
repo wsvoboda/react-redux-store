@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs";
 import Products from "./Products";
 import Cart from "./Cart";
 import Landing from "./Landing";
+import cart from "../assets/cart.png";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -17,7 +18,9 @@ export default function Navbar() {
             <Link to="/">Home</Link>
             <Link to="/aboutus">About Us</Link>
             <Link to="/products">Products</Link>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">
+              <img className="cart" src={cart} alt="shopping-cart" />
+            </Link>
           </nav>
         </div>
         <Switch>
