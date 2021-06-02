@@ -28,7 +28,7 @@ export default function Products() {
             <p>{item.description}</p>
             <p>${item.price}</p>
             <label>Qty</label>
-            <input type="number"></input>
+            <input type="number" placeholder="1" min="0"></input>
             <button>Add to Cart</button>
           </div>
         );
