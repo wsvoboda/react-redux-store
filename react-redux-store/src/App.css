@@ -40,6 +40,12 @@
   width: 20px;
 }
 
+.footer-links img {
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
