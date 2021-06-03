@@ -19,18 +19,20 @@ export default function Products() {
   return (
     <div className="Products">
       <h1>Products</h1>
-      {products.map((item) => {
-        return (
-          <div className="product-cards">
-            <p>{item.title}</p>
-            <img src={item.image} alt="product" />
-            <p>${item.price}</p>
-            <Link to={`/products/${item.id}`}>
-              <button>View More</button>
-            </Link>
-          </div>
-        );
-      })}
+      <div className="card-container">
+        {products.map((item) => {
+          return (
+            <div className="product-cards">
+              <p>{item.title}</p>
+              <img src={item.image} alt="product" />
+              <p>${item.price}</p>
+              <Link to={`/products/${item.id}`}>
+                <button>View More</button>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
