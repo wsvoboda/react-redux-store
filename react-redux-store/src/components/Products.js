@@ -25,7 +25,7 @@ export default function Products() {
             <div className="product-cards">
               <p>{item.title}</p>
               <img src={item.image} alt="product" />
-              <p>${item.price.toFixed(2)}</p>
+              <p>${item.price}</p>
               <Link to={`/products/${item.id}`}>
                 <button>View More</button>
               </Link>
