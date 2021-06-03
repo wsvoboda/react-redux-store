@@ -164,3 +164,16 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 850px) {
+  .one-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    margin-bottom: 55px;
+  }
+
+  .item-container {
+    margin-bottom: 55px;
+  }
+}
