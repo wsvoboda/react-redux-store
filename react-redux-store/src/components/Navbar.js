@@ -15,6 +15,7 @@ export default function Navbar() {
       <Router>
         <div>
           <nav className="navbar">
+            <h1>Odds & Ends</h1>
             <Link to="/">Home</Link>
             <Link to="/aboutus">About Us</Link>
             <Link to="/products">Products</Link>
