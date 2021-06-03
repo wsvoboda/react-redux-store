@@ -8,6 +8,7 @@ import twitter from "../assets/twitter.png";
 export default function Footer() {
   return (
     <div className="footer-links">
+      <p>Find us on Social Media: </p>
       <a href="https://facebook.com">
         <img src={fb} alt="facebook" />
       </a>
