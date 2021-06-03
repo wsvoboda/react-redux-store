@@ -15,13 +15,17 @@ export default function Navbar() {
       <Router>
         <div>
           <nav className="navbar">
-            <h1>Odds & Ends</h1>
-            <Link to="/">Home</Link>
-            <Link to="/aboutus">About Us</Link>
-            <Link to="/products">Products</Link>
-            <Link to="/cart">
-              <img className="cart" src={cartpic} alt="shopping-cart" />
-            </Link>
+            <div className="logo">
+              <h1>Odds & Ends</h1>
+              <Link to="/">Home</Link>
+              <Link to="/aboutus">About Us</Link>
+              <Link to="/products">Products</Link>
+            </div>
+            <div className="cart-div">
+              <Link to="/cart">
+                <img className="cart" src={cartpic} alt="shopping-cart" />
+              </Link>
+            </div>
           </nav>
         </div>
         <Switch>
