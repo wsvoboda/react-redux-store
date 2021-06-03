@@ -1,20 +1,18 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useDispatch } from "react-redux";
 import { fillCart } from "../actions/cart-actions";
 
 export default function OneProduct({ item }) {
   const dispatch = useDispatch();
   return (
-    <div>
-      <h1>Individual Product</h1>
-      <div className="products">
-        <p>{item.title}</p>
-        <p>{item.description}</p>
-        <img src={item.image} alt="product" />
-        <p>${item.price}</p>
-        <label>Qty</label>
-        <input type="number" placeholder="1" min="0"></input>
+    <div className="item-container">
+      <div className="one-item">
+        <h3 id="item-title">{item.title}</h3>
+        <p id="item-description">{item.description}</p>
+        <img src={item.image} alt="product" id="item-img" />
+        <h3 id="item-price">${item.price.toFixed(2)}</h3>
         <button
+          id="item-button"
           onClick={() => {
             fillCart(dispatch, item);
           }}

@@ -7,7 +7,9 @@ import OneProduct from "./OneProduct";
 export default function IndividualProduct({ match }) {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.oneProduct);
-  const productNumber = match.params.id;
+  // const allProds = useSelector((state) => state.products.allProducts);
+  const productNumber = parseInt(match.params.id);
+
   useEffect(() => {
     const getProducts = async () => {
       const response = await fetch(
@@ -18,6 +20,13 @@ export default function IndividualProduct({ match }) {
     };
     getProducts();
   }, []);
+  // useEffect(() => {
+  //   const getProducts = () => {
+  //     const oneProduct = allProds.filter((prod) => prod.id === productNumber);
+  //     showOneProduct(dispatch, oneProduct);
+  //   };
+  //   getProducts();
+  // }, []);
 
   return (
     <div>

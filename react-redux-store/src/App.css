@@ -71,6 +71,54 @@
   align-items: center;
 }
 
+.item-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.one-item {
+  margin-top: 70px;
+  display: grid;
+  height: 80vh;
+  padding: 0 20%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "title title"
+    "img desc"
+    "price button";
+}
+
+#item-title {
+  grid-area: title;
+  align-items: center;
+  margin: auto;
+}
+
+#item-description {
+  grid-area: desc;
+  margin: auto;
+  padding: 50px;
+}
+#item-img {
+  grid-area: img;
+  margin: auto;
+}
+#item-price {
+  grid-area: price;
+  margin: auto;
+}
+#item-button {
+  grid-area: button;
+  margin: auto;
+}
+
+.one-item img {
+  height: 300px;
+  width: 250px;
+}
+
 .footer-links {
   display: flex;
   flex-direction: row;
