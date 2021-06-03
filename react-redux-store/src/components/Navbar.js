@@ -24,24 +24,12 @@ export default function Navbar() {
           </nav>
         </div>
         <Switch>
-          <Route path="/aboutus">
-            <AboutUs />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-          <Route exact path="/products/:id">
-            <IndividualProduct />
-          </Route>
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route path="*">
-            <Landing />
-          </Route>
+          <Route path="/aboutus" component={AboutUs} />
+          <Route path="/cart" component={Cart} />
+          <Route exact path="/products" component={Products} />
+          <Route path="/products/:id" component={IndividualProduct} />
+          <Route exact path="/" component={Landing} />
+          <Route path="*" component={Landing} />
         </Switch>
       </Router>
     </div>
