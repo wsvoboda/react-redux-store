@@ -1,6 +1,6 @@
 import { FILL_PRODUCTS_FROM_API } from "../action-types/products-action-types";
 
-const initialState = "";
+const initialState = [{}];
 
 const products = (state = initialState, action) => {
   switch (action.type) {

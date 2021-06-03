@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-// import IndividualProduct from "./IndividualProduct";
 import { showProducts } from "../actions/products-actions";
 // import { fillCart } from "../actions/cart-actions";
 
