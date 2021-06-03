@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { showProducts } from "../actions/products-actions";
-// import { fillCart } from "../actions/cart-actions";
 
 export default function Products() {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
-  // const cart = useSelector((state) => state.cart);
 
   useEffect(() => {
     const getProducts = async () => {
@@ -16,6 +14,7 @@ export default function Products() {
     };
     getProducts();
   }, []);
+
   return (
     <div>
       <h1>Products</h1>
@@ -24,11 +23,10 @@ export default function Products() {
           <div className="products">
             <p>{item.title}</p>
             <img src={item.image} alt="product" />
-            <p>{item.description}</p>
             <p>${item.price}</p>
-            <label>Qty</label>
-            <input type="number" placeholder="1" min="0"></input>
-            <button>Add to Cart</button>
+            <a href={`/products/${item.id}`}>
+              <button>See More</button>
+            </a>
           </div>
         );
       })}

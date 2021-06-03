@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-
 import AboutUs from "./AboutUs";
 import Products from "./Products";
 import Cart from "./Cart";
@@ -34,7 +33,7 @@ export default function Navbar() {
           <Route path="/products">
             <Products />
           </Route>
-          <Route path="/products/:id">
+          <Route exact path="/products/:id">
             <IndividualProduct />
           </Route>
           <Route exact path="/">
