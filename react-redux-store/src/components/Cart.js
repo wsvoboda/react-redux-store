@@ -5,7 +5,7 @@ import "../App.css";
 export default function Cart() {
   const cart = useSelector((state) => state.cart);
   return (
-    <div>
+    <div className="Cart">
       <h1>Cart</h1>
       {cart.map((items) => {
         return (

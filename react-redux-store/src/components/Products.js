@@ -17,11 +17,11 @@ export default function Products() {
   }, []);
 
   return (
-    <div>
+    <div className="Products">
       <h1>Products</h1>
       {products.map((item) => {
         return (
-          <div className="products">
+          <div className="product-cards">
             <p>{item.title}</p>
             <img src={item.image} alt="product" />
             <p>${item.price}</p>

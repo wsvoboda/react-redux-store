@@ -34,7 +34,19 @@
   margin-top: 70px;
 }
 
-.cart {
+.About {
+  margin-top: 70px;
+}
+
+.Products {
+  margin-top: 70px;
+}
+
+.Cart {
+  margin-top: 70px;
+}
+
+.cart-pic {
   margin-top: 10px;
   margin-bottom: -3px;
   height: 20px;
@@ -59,14 +71,9 @@
   margin-left: 15px;
 }
 
-.products img {
+.product-cards img {
   height: 200px;
   width: 200px;
-}
-
-.products input {
-  width: 30px;
-  margin: 4px;
 }
 
 .cart-items img {

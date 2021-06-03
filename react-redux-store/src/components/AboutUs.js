@@ -1,8 +1,9 @@
 import React from "react";
+import "../App.css";
 
 export default function AboutUs() {
   return (
-    <div>
+    <div className="About">
       <h1>About Us</h1>
       <h3>
         We're the best store, ever. All items are ethically sourced and

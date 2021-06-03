@@ -23,7 +23,7 @@ export default function Navbar() {
             </div>
             <div className="cart-div">
               <Link to="/cart">
-                <img className="cart" src={cartpic} alt="shopping-cart" />
+                <img className="cart-pic" src={cartpic} alt="shopping-cart" />
               </Link>
             </div>
           </nav>
