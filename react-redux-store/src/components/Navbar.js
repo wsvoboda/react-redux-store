@@ -7,6 +7,7 @@ import Cart from "./Cart";
 import Landing from "./Landing";
 import IndividualProduct from "./IndividualProduct";
 import cartpic from "../assets/cart.png";
+import logo from "../assets/logo.png";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -18,7 +19,7 @@ export default function Navbar() {
         <div>
           <nav className="navbar">
             <div className="logo">
-              <h1>Odds & Ends</h1>
+              <img src={logo} alt="logo" id="logo" />
               <Link to="/">Home</Link>
               <Link to="/aboutus">About Us</Link>
               <Link to="/products">Products</Link>

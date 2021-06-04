@@ -13,6 +13,17 @@ export default function Cart() {
   return (
     <div className="Cart">
       <h1>Cart</h1>
+      <div className="cart-items">
+        <u>
+          <h3>Item</h3>
+        </u>
+        <u>
+          <h3>Title</h3>
+        </u>
+        <u>
+          <h3>Price</h3>
+        </u>
+      </div>
       {cart.map((items) => {
         return (
           <div className="cart-items">
@@ -23,7 +34,7 @@ export default function Cart() {
         );
       })}
       <p>
-        <strong>Grand Total:</strong> ${grandTotal.toFixed(2)}
+        <strong>Total:</strong> ${grandTotal.toFixed(2)}
       </p>
     </div>
   );
