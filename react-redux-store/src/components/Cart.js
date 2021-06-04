@@ -17,7 +17,7 @@ export default function Cart() {
         return (
           <div className="cart-items">
             <img src={items.image} alt="cart-item" />
-            {/* <p>{items.title}</p> */}
+            <p>{items.title}</p>
             <p>${items.price}</p>
           </div>
         );
