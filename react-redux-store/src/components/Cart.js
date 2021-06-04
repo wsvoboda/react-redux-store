@@ -18,7 +18,7 @@ export default function Cart() {
           <h3>Item</h3>
         </u>
         <u>
-          <h3>Title</h3>
+          <h3>Description</h3>
         </u>
         <u>
           <h3>Price</h3>
