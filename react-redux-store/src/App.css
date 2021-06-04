@@ -31,10 +31,15 @@
 }
 
 .cart-pic {
-  margin-top: 10px;
-  margin-bottom: -3px;
+  margin-top: 6px;
   height: 20px;
   width: 22px;
+}
+
+.cart-div {
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
 }
 
 .Landing {

@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "../App.css";
 import AboutUs from "./AboutUs";
 import Products from "./Products";
@@ -10,6 +11,7 @@ import cartpic from "../assets/cart.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function Navbar() {
+  const cart = useSelector((state) => state.cart);
   return (
     <div>
       <Router>
@@ -25,6 +27,7 @@ export default function Navbar() {
               <Link to="/cart">
                 <img className="cart-pic" src={cartpic} alt="shopping-cart" />
               </Link>
+              <p>Items in Cart: {cart.length}</p>
             </div>
           </nav>
         </div>
