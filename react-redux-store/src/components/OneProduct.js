@@ -7,14 +7,14 @@ export default function OneProduct({ item }) {
   return (
     <div className="item-container">
       <div className="one-item">
-        <h3 id="item-title">{item.title}</h3>
-        <p id="item-description">{item.description}</p>
-        <img src={item.image} alt="product" id="item-img" />
-        <h3 id="item-price">${item.price}</h3>
+        <h3 id="item-title">{item[0].title}</h3>
+        <p id="item-description">{item[0].description}</p>
+        <img src={item[0].image} alt="product" id="item-img" />
+        <h3 id="item-price">${item[0].price}</h3>
         <button
           id="item-button"
           onClick={() => {
-            fillCart(dispatch, item);
+            fillCart(dispatch, item[0]);
           }}
         >
           Add to Cart
