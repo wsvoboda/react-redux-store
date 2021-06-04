@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./reducers/rootReducer";
 import logger from "redux-logger";
+import "./fonts/Raleway-Light.ttf";
 
 const store = createStore(rootReducer, applyMiddleware(logger));
 ReactDOM.render(
